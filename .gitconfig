@@ -1,0 +1,43 @@
+[push]
+	default = simple
+[user]
+	name = Milan Navratil
+	email = mnavrati@redhat.com
+[alias]
+  ga = add
+  gp = push
+  gl = log
+  gst = status
+  gd = diff
+  glo = log --oneline
+  gsh = show
+# gcm = 'commit'
+  gbr = branch
+  last = 'log -1 HEAD'
+  gco = checkout
+  gpr = 'pull --rebase'
+# fnd = log --pretty=\"format:%Cgreen%H %Cgreen%s\" --name-status --grep
+[color]
+	ui = true
+[color "branch"]
+  current = green bold
+  local = yellow bold
+  remote = red bold
+[color "status"]
+  changed = red bold
+  untracked = red bold
+  added = green bold
+[color "show"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[core]
+	excludesfile = /home/milan/.gitignore
+  editor = vim
+	pager = less -r
